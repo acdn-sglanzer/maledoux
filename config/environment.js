@@ -4,6 +4,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'maledoux',
+    podModulePrefix: 'maledoux/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',

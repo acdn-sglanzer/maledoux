@@ -1,0 +1,16 @@
+<div>Hello world (with users)</div>
+
+<form onsubmit={{action 'submit'}}>
+  <label for='name'>Name</label>
+  <input id='name' type='text' value={{name}}
+    oninput={{action (action 'setName') value='target.value'}}
+  >
+
+  <button type='submit'>Submit</button>
+</form>
+
+{{#each model as |user|}}
+  <div>
+    {{user.name}}
+  </div>
+{{/each}}
